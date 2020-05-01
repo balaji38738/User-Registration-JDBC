@@ -1,8 +1,5 @@
-import com.bridgelabz.BasicDetails;
-import com.bridgelabz.ContactDetails;
-import com.bridgelabz.LoginCredentials;
-import com.bridgelabz.service.UserService;
-import com.bridgelabz.service.UserServiceImpl;
+import com.bridgelabz.model.*;
+import com.bridgelabz.service.*;
 
 public class UserValidation {
     private static final String NAME_PATTERN = "^[a-zA-Z]{2,}$";

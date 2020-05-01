@@ -1,6 +1,6 @@
 package com.bridgelabz.service;
 
-import com.bridgelabz.LoginCredentials;
+import com.bridgelabz.model.LoginCredentials;
 import com.bridgelabz.model.User;
 
 public interface UserService {

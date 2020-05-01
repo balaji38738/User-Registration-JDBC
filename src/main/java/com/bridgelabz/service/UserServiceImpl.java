@@ -1,9 +1,8 @@
 package com.bridgelabz.service;
 
-import com.bridgelabz.LoginCredentials;
+import com.bridgelabz.model.LoginCredentials;
 import com.bridgelabz.model.User;
 import com.bridgelabz.repository.UserRepository;
-
 import java.time.LocalDate;
 
 public class UserServiceImpl implements UserService{

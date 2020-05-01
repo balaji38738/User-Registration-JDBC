@@ -1,9 +1,5 @@
 package com.bridgelabz.model;
 
-import com.bridgelabz.LoginCredentials;
-import com.bridgelabz.BasicDetails;
-import com.bridgelabz.ContactDetails;
-
 import java.time.LocalDate;
 
 public class User {

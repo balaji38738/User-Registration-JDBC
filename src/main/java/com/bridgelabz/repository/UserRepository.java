@@ -1,10 +1,6 @@
 package com.bridgelabz.repository;
 
-import com.bridgelabz.LoginCredentials;
-import com.bridgelabz.model.User;
-import com.bridgelabz.BasicDetails;
-import com.bridgelabz.ContactDetails;
-
+import com.bridgelabz.model.*;
 import java.sql.*;
 
 public class UserRepository {
