@@ -8,11 +8,11 @@ public class AddUserRepo implements UserRepository{
         BasicDetails basicDetails = user.getBasicDetails();
         ContactDetails contactDetails = user.getContactDetails();
         LoginCredentials loginCredentials = user.getLoginCredentials();
-
         Connection connection = getConnection();
         try {
             assert connection != null;
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO UserDetails VALUES(?,?,?,?,?,?,?,?)");
+            PreparedStatement statement = connection.prepareStatement(
+                    "INSERT INTO UserDetails VALUES(?,?,?,?,?,?,?,?)");
             statement.setString(1, basicDetails.getFirstName());
             statement.setString(2, basicDetails.getLastName());
             statement.setDate(3, Date.valueOf(user.getRegisterDate()));
@@ -28,5 +28,4 @@ public class AddUserRepo implements UserRepository{
             e.printStackTrace();
         }
     }
-
 }

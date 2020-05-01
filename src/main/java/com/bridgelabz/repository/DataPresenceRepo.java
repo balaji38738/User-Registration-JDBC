@@ -14,8 +14,9 @@ public class DataPresenceRepo implements UserRepository{
             String query = "SELECT username FROM UserDetails";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                if (resultSet.getString("username").equals(username))
+                if (resultSet.getString("username").equals(username)) {
                     return true;
+                }
             }
         } catch (SQLException throwable) {
             throwable.printStackTrace();

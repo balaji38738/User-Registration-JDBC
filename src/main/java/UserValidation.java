@@ -5,7 +5,7 @@ public class UserValidation {
     private static final String NAME_PATTERN = "^[a-zA-Z]{2,}$";
     private static final String EMAIL_PATTERN = "^[0-9a-zA-Z]+([_+-.][0-9a-zA-Z]+)*" +
             "@[0-9a-zA-Z]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2})?$";
-    private static final String MOBILE_PATTERN = "^(0|91)?[7-9][0-9]{9}$";
+    private static final String MOBILE_PATTERN = "^(0|91)? [7-9][0-9]{9}$";
     private static final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
     private static final String USERNAME_PATTERN = "^[a-zA-Z]\\w{8,30}$";
 

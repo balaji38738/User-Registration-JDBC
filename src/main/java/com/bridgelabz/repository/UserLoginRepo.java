@@ -1,7 +1,6 @@
 package com.bridgelabz.repository;
 
 import com.bridgelabz.model.LoginCredentials;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,7 +14,7 @@ public class UserLoginRepo implements UserRepository{
         try {
             assert connection != null;
             Statement statement = connection.createStatement();
-            String query = "SELECT firstname, lastname, username, password, mobile, email, address FROM UserDetails";
+            String query = "SELECT * FROM UserDetails";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
                 if (resultSet.getString("username").equals(username)
